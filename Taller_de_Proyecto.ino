@@ -23,7 +23,7 @@ int minu;
 
 //Variables de alimentación
 int horaActivacion;
-int distActivacion = 20; //A qué distancia se activa el sensor.
+int distActivacion = 30; //A qué distancia se activa el sensor (en cm.).
 
 bool yaComio = false; //Si ya comió en el día.
 

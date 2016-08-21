@@ -34,7 +34,6 @@ Servo myservo;
 void setup(void)
 {
   //Init serial
-  Serial.begin(9600);
 
   //Setups generales
   pinMode(triggerPin,OUTPUT);
@@ -53,7 +52,6 @@ void loop(void)
 {
     //Potenciometro para la hora de alimentación.
     horaActivacion = round(analogRead(potencPin)*24/1024);
-    Serial.print("hora: "+String(horaActivacion)+"\n");
     
     //Cosas del reloj.
     static time_t tLast;
